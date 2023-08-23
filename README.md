@@ -71,3 +71,7 @@ Gitea — это легкая платформа DevOps. Он позволяет
 $ git remote add origin https://gitea.xxxx.ru/xxxx/yandex_git.git
 $ git push -u origin master
 ```
+
+## Хеш
+
+Основной идентификатор коммита.
