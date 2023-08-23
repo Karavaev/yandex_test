@@ -86,3 +86,15 @@ $ git log
 ## HEAD
 
 Вместа Хеш последнего коммита можно использовать "ссылку" с именем HEAD. 
+
+## Cтатус и жизненный цикл файлов
+
+```mermaid
+graph LR;
+%% Cтатус и жизненный цикл файлов
+    A[untracked] -- git add --> B[staged];
+    B[staged]    -- git commit --> C[tracked];
+    C -- Изменения --> D[modified];
+    D -- git add --> B;
+    B -- Изменения --> D;
+``` 
